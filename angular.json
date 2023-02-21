@@ -100,6 +100,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "kosmeticpage:build:production",
+            "firebaseProject": "kosmeticpage",
+            "firebaseHostingSite": "kosmeticpage"
+          }
         }
       }
     }

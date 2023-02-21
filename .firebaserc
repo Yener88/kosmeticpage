@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "kosmeticpage": {
+      "hosting": {
+        "kosmeticpage": [
+          "kosmeticpage"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "kosmeticpage"
+  }
+}
