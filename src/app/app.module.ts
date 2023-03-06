@@ -8,6 +8,7 @@ import { BLeistungenComponent } from './b-leistungen/b-leistungen.component';
 import { CPreislisteComponent } from './c-preisliste/c-preisliste.component';
 import { DKontaktComponent } from './d-kontakt/d-kontakt.component';
 import { EFooterComponent } from './e-footer/e-footer.component';
+import { AaAboutComponent } from './aa-about/aa-about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EFooterComponent } from './e-footer/e-footer.component';
     BLeistungenComponent,
     CPreislisteComponent,
     DKontaktComponent,
-    EFooterComponent
+    EFooterComponent,
+    AaAboutComponent
   ],
   imports: [
     BrowserModule,
