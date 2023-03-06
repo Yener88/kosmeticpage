@@ -38,7 +38,7 @@ export class AIntroComponent implements OnInit {
           sliderImage.style.opacity = '1';
           sliderImage2.style.opacity = '0';
         }
-      }, 4000);
+      }, 4500);
     }
   }
 
