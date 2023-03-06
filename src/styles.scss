@@ -1,7 +1,26 @@
-body, html {
+body,
+html {
     margin: 0;
     scroll-behavior: smooth;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     // font-family: 'Rouge Script', cursive;
     overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(246, 217, 189);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(143, 107, 73);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgb(114, 85, 57);
 }
