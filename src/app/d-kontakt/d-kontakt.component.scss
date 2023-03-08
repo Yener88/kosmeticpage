@@ -1,5 +1,5 @@
 .kontaktSection {
-    height: 1430px;
+    height: 1500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,9 @@
         font-size: 18px;
     }
 }
-
+.route {
+    text-align: start;
+}
 .designBg {
     position: absolute;
     top: 2660px;
@@ -49,7 +51,7 @@
 
 .scrollUpBtn {
     position: absolute;
-    top: 4690px;
+    top: 4760px;
     right: 20px;
     cursor: default;
     a {
