@@ -31,19 +31,28 @@
         border-radius: 100%;
         cursor: pointer;
         margin-bottom: 15px;
+        transition: all 225ms ease-in-out;
         &:hover {
-            opacity: 0.7;
+            transform: scale(1.1);
+            transition: all 225ms ease-in-out;
         }
     }
 }
 
 .footerLinks {
+    a {
+        cursor: default;
+    }
     img {
         width: 40px;
         height: auto;
-        padding: 15px;
+        margin: 15px;
+        transition: all 225ms ease-in-out;
+        cursor: pointer;
+        border-radius: 100%;
         &:hover {
-            opacity: 0.7;
+            transform: scale(1.2);
+            transition: all 225ms ease-in-out;
         }
     }
 }

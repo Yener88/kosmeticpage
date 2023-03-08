@@ -11,5 +11,4 @@ export class AaAboutComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
