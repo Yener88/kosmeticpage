@@ -1,5 +1,5 @@
 .kontaktSection {
-    height: 1600px;
+    height: 1430px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,11 +27,12 @@
 
 .openTimePosition {
     text-align: start;
-    width: 200px;
-    margin-right: 130px;
+    width: 250px;
+    margin-right: 290px;
     span {
         display: flex;
         justify-content: space-between;
+        font-size: 18px;
     }
 }
 
@@ -48,13 +49,12 @@
 
 .scrollUpBtn {
     position: absolute;
-    top: 4860px;
+    top: 4690px;
     right: 20px;
     cursor: default;
     a {
         cursor: default;
     }
-
     img {
         width: 45px;
         height: auto;
@@ -85,7 +85,7 @@
         font-size: 16px;
         line-height: 19.2px;
         border: 1px solid rgb(63, 47, 31);
-        border-radius: 10px;
+        border-radius: 3px;
         padding-top: 5px;
         padding-bottom: 5px;
         &:required:invalid:focus {
@@ -118,7 +118,7 @@
         line-height: 19.2px;
         resize: none;
         border: 1px solid rgb(63, 47, 31);
-        border-radius: 10px;
+        border-radius: 3px;
         &:required:invalid:focus {
             border: 1px solid #e61c40;
         }
@@ -132,22 +132,19 @@
             width: 94%;
         }
     }
-
 }
 
 .kontaktPositionContainer {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .contactText {
     width: 50%;
     text-align: start;
     margin-left: 30px;
-
 }
 
-/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -156,15 +153,29 @@ input::-webkit-inner-spin-button {
 
 .checkboxStyle {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     text-align: start;
     font-size: 14px;
+    cursor: pointer;
     input {
-        width: 30px;
-        height: auto;
+        width: 20px;
+        height: 20px;
         margin-top: 5px;
         margin-right: 15px;
     }
+}
+
+.checkboxStyle input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid rgb(63, 47, 31);
+    border-radius: 2px;
+    background-color: rgb(243, 221, 200);
+}
+
+.checkboxStyle input[type="checkbox"]:checked {
+    background-color: green;
 }
 
 button {
