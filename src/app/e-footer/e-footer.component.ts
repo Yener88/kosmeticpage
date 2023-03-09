@@ -12,4 +12,21 @@ export class EFooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openPolicy() {
+    const policyClick = document.getElementById('policyClick');
+    if (policyClick) {
+      policyClick.classList.add('slide-up');
+      policyClick.classList.remove('d-none');
+      document.documentElement.style.setProperty('overflow-y', 'hidden');
+    }
+  }
+
+  closePolicy() {
+    const policyClick = document.getElementById('policyClick');
+    if (policyClick) {
+      policyClick.classList.add('d-none');
+      document.documentElement.style.setProperty('overflow-y', 'auto');
+    }
+  }
+
 }

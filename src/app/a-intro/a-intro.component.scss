@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     background-color: rgb(246, 243, 238);
+    z-index: 0;
 }
 
 .introContent {
@@ -21,7 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 5;
+    z-index: 2;
     border-bottom: 1px solid rgb(63, 47, 31);
 }
 
@@ -56,14 +57,14 @@
     a {
         text-decoration: none;
         padding: 15px;
-        color: black;
+        color: rgb(63, 47, 31);
         font-size: 18px;
         transition: all 280ms ease-in-out;
     }
 }
 
 .btn {
-    color: #fff;
+    color: #3f2f1f;
     cursor: pointer;
     max-width: 160px;
     position: relative;
@@ -85,7 +86,7 @@
 .btn-2:after,
 .btn-2:before {
     backface-visibility: hidden;
-    border: 1px solid rgba(#fff, 0);
+    border: 1px solid rgba(#3f2f1f, 0);
     bottom: 0px;
     content: " ";
     display: block;
@@ -127,8 +128,8 @@
     img {
         position: absolute;
         top: 27vh;
-        height: 70vh;
-        max-width: 1100px;
+        left: 0;
+        height: 73vh;
         width: 100%;
         object-fit: cover;
         transition: opacity 2s ease-in-out;
@@ -199,7 +200,6 @@ button {
     font-size: 35px;
     font-weight: 400;
     padding-top: 10vh;
-    z-index: 2;
     text-align: center;
 }
 

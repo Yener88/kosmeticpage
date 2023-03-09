@@ -1,4 +1,5 @@
 <div class="aboutSection">
+
     <div class="aboutContent" id="about">
         <h1>Kosmetikstudio SchönZeit</h1>
         <div class="aboutContent2">
@@ -31,8 +32,32 @@
             <img src="assets/img/selfpicture.png" alt="Self Picture">
         </div>
         <div class="imgGalerie">
-            fotogalerieleiste
+            <img (click)="openImg($event)" src="assets/img/imgLaden1.jpg" alt="Foto vom Kosmetikstudio">
+            <img (click)="openImg($event)" src="assets/img/imgLaden2.jpg" alt="Foto vom Kosmetikstudio">
+            <img (click)="openImg($event)" src="assets/img/imgLaden3.jpg" alt="Foto vom Kosmetikstudio">
+            <img (click)="openImg($event)" src="assets/img/imgLaden4.jpg" alt="Foto vom Kosmetikstudio">
+            <img (click)="openImg($event)" src="assets/img/imgLaden5.jpg" alt="Foto vom Kosmetikstudio">
+            <img (click)="openImg($event)" src="assets/img/imgLaden6.jpg" alt="Foto vom Kosmetikstudio">
+            <img (click)="openImg($event)" src="assets/img/imgLaden7.jpg" alt="Foto vom Kosmetikstudio">
+            <img (click)="openImg($event)" src="assets/img/imgLaden8.jpg" alt="Foto vom Kosmetikstudio">
+            <img (click)="openImg($event)" src="assets/img/imgLaden9.jpg" alt="Foto vom Kosmetikstudio">
+            <img (click)="openImg($event)" src="assets/img/imgLaden10.jpg" alt="Foto vom Kosmetikstudio">
+            <img (click)="openImg($event)" src="assets/img/imgLaden11.jpg" alt="Foto vom Kosmetikstudio">
+            <img (click)="openImg($event)" src="assets/img/imgLaden12.jpg" alt="Foto vom Kosmetikstudio">
         </div>
-
+        <div #imgModal class="imgModal">
+            <img src="">
+            <button (click)="closeImg()" class="closeImg">x</button>
+            <button (click)="previousImg()" class="previousImg">
+                <span>
+                    < </span>
+            </button>
+            <button (click)="nextImg()" class="nextImg">
+                <span>></span>
+            </button>
+            <button (click)="downloadImg()" class="downloadImg">
+                H
+            </button>
+        </div>
     </div>
 </div>
