@@ -1,9 +1,8 @@
 <div class="aboutSection">
-
     <div class="aboutContent" id="about">
-        <h1>Kosmetikstudio SchönZeit</h1>
         <div class="aboutContent2">
             <span>
+                <h2>Bei uns können Sie sich sicher und wohl fühlen!</h2><br>
                 Das Kosmetikstudio Schönzeit in Bergheim ist der ideale Ort, um sich eine Auszeit vom Alltag zu gönnen
                 und
                 sich rundum verwöhnen zu lassen. Hier erwarten Sie erfahrene und professionelle Kosmetikerinnen, die
@@ -31,6 +30,7 @@
             </span>
             <img src="assets/img/selfpicture.png" alt="Self Picture">
         </div>
+        <!-- IMAGE BOX LEISTE -->
         <div class="imgGalerie">
             <img (click)="openImg($event)" src="assets/img/imgLaden1.jpg" alt="Foto vom Kosmetikstudio">
             <img (click)="openImg($event)" src="assets/img/imgLaden2.jpg" alt="Foto vom Kosmetikstudio">
@@ -45,6 +45,7 @@
             <img (click)="openImg($event)" src="assets/img/imgLaden11.jpg" alt="Foto vom Kosmetikstudio">
             <img (click)="openImg($event)" src="assets/img/imgLaden12.jpg" alt="Foto vom Kosmetikstudio">
         </div>
+        <!-- WENN AUF EIN BILD GEKLICKT WIRD -->
         <div #imgModal class="imgModal">
             <img src="">
             <button (click)="closeImg()" class="closeImg">x</button>
@@ -56,7 +57,7 @@
                 <span>></span>
             </button>
             <button (click)="downloadImg()" class="downloadImg">
-                H
+                <img src="assets/img/downloadbtn.png" alt="Download Button">
             </button>
         </div>
     </div>

@@ -1,13 +1,203 @@
 <div class="leistungenSection">
     <div class="leistungenContent" id="leistungen">
         <h1>Leistungen</h1>
-        <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium repudiandae eaque veritatis autem!
-            Aliquid quis vitae aliquam sunt quos obcaecati neque nobis, commodi rerum porro cupiditate velit veritatis!
-            Tenetur, quidem!
-        </span>
-
+        <!-- HIER IST DIE ANSICHT MIT DEN KLEINEN BLÖCKEN -->
+        <div class="leistungenContainer">
+            <div class="leistungenBlock" (click)="openLeistungenBlock1()">
+                <img src="assets/img/leistungen1.png" alt="Leistungen Header Foto">
+                <span class="leistungenBlockTitle">Leistung1</span><br>
+                <span>
+                    hier steht die beschreibung
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non iusto repellendus iste. Quidem
+                    sunt et impedit iure asperiores perspiciatis vero.
+                </span>
+            </div>
+            <div class="leistungenBlock" (click)="openLeistungenBlock2()">
+                <img src="assets/img/leistungen2.png" alt="Leistungen Header Foto">
+                <span class="leistungenBlockTitle">Leistung2</span><br>
+                <span>
+                    hier steht die beschreibung
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non iusto repellendus iste. Quidem
+                    sunt et impedit iure asperiores perspiciatis vero.
+                </span>
+            </div>
+            <div class="leistungenBlock" (click)="openLeistungenBlock3()">
+                <img src="assets/img/leistungen3.png" alt="Leistungen Header Foto">
+                <span class="leistungenBlockTitle">Leistung3</span><br>
+                <span>
+                    hier steht die beschreibung
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non iusto repellendus iste. Quidem
+                    sunt et impedit iure asperiores perspiciatis vero.
+                </span>
+            </div>
+            <div class="leistungenBlock" (click)="openLeistungenBlock4()">
+                <img src="assets/img/leistungen4.jpg" alt="Leistungen Header Foto">
+                <span class="leistungenBlockTitle">Leistung4</span><br>
+                <span>
+                    hier steht die beschreibung
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non iusto repellendus iste. Quidem
+                    sunt et impedit iure asperiores perspiciatis vero.
+                </span>
+            </div>
+            <div class="leistungenBlock" (click)="openLeistungenBlock5()">
+                <img src="assets/img/leistungen5.jpg" alt="Leistungen Header Foto">
+                <span class="leistungenBlockTitle">Leistung5</span><br>
+                <span>
+                    hier steht die beschreibung
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non iusto repellendus iste. Quidem
+                    sunt et impedit iure asperiores perspiciatis vero.
+                </span>
+            </div>
+        </div>
     </div>
+
+    <!-- HIER BEGINNT DER INNERE INHALT -->
+    <!-- LEISTUNGEN BLOCK 1 -->
+    <div id="leistungenInnerBlock1" class="d-none">
+        <div class="leistungenInnerBlock1Box">
+            <div class="leistungenInnerBlock1Text">
+                <h1>leistungenBlock1</h1>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span>
+            </div>
+            <div (click)="closeLeistungenBlock1()" class="leistungenInnerBlock1Close">x</div>
+        </div>
+    </div>
+    <!-- LEISTUNGEN BLOCK 2 -->
+    <div id="leistungenInnerBlock2" class="d-none">
+        <div class="leistungenInnerBlock2Box">
+            <div class="leistungenInnerBlock2Text">
+                <h1>leistungenBlock2</h1>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span>
+            </div>
+            <div (click)="closeLeistungenBlock2()" class="leistungenInnerBlock2Close">x</div>
+        </div>
+    </div>
+    <!-- LEISTUNGEN BLOCK 3 -->
+    <div id="leistungenInnerBlock3" class="d-none">
+        <div class="leistungenInnerBlock3Box">
+            <div class="leistungenInnerBlock3Text">
+                <h1>leistungenBlock3</h1>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span>
+            </div>
+            <div (click)="closeLeistungenBlock3()" class="leistungenInnerBlock3Close">x</div>
+        </div>
+    </div>
+    <!-- LEISTUNGEN BLOCK 4 -->
+    <div id="leistungenInnerBlock4" class="d-none">
+        <div class="leistungenInnerBlock4Box">
+            <div class="leistungenInnerBlock4Text">
+                <h1>leistungenBlock4</h1>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span>
+            </div>
+            <div (click)="closeLeistungenBlock4()" class="leistungenInnerBlock4Close">x</div>
+        </div>
+    </div>
+    <!-- LEISTUNGEN BLOCK 5 -->
+    <div id="leistungenInnerBlock5" class="d-none">
+        <div class="leistungenInnerBlock5Box">
+            <div class="leistungenInnerBlock5Text">
+                <h1>leistungenBlock5</h1>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span><br>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, odio reiciendis a enim
+                    maxime. Voluptas numquam aliquam, impedit corrupti quam, vero eius tempore iure consequuntur
+                    molestiae, fugit ut itaque?
+                </span>
+            </div>
+            <div (click)="closeLeistungenBlock5()" class="leistungenInnerBlock5Close">x</div>
+        </div>
+    </div>
+    <!-- DESIGN -->
     <div class="designBg">
         <img src="assets/img/designmain.png" alt="Background Design Border">
     </div>

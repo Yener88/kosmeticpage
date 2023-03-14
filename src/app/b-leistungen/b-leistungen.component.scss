@@ -12,7 +12,10 @@
     width: 100%;
     text-align: center;
     z-index: 1;
+}
 
+.d-none {
+    display: none !important;
 }
 
 .designBg {
@@ -24,4 +27,108 @@
     img {
         opacity: 0.3;
     }
+}
+
+.leistungenContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.leistungenBlock {
+    background-color: rgb(246, 243, 238);
+    border: 1px solid rgb(63, 47, 31);
+    border-radius: 3px;
+    width: 300px;
+    height: 250px;
+    margin: 15px;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        border-bottom: 1px solid rgb(63, 47, 31);
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+#leistungenInnerBlock1,
+#leistungenInnerBlock2,
+#leistungenInnerBlock3,
+#leistungenInnerBlock4,
+#leistungenInnerBlock5 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leistungenInnerBlock1Text,
+.leistungenInnerBlock2Text,
+.leistungenInnerBlock3Text,
+.leistungenInnerBlock4Text,
+.leistungenInnerBlock5Text {
+    width: 100%;
+    background-color: rgb(246, 243, 238);
+}
+
+.leistungenInnerBlock1Box,
+.leistungenInnerBlock2Box,
+.leistungenInnerBlock3Box,
+.leistungenInnerBlock4Box,
+.leistungenInnerBlock5Box {
+    background-color: rgb(246, 243, 238);
+    border: 1px solid rgb(63, 47, 31);
+    border-radius: 3px;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leistungenAnimation {
+    animation: leistungenAnimation 0.3s ease-out;
+    scroll-behavior: smooth;
+}
+
+@keyframes leistungenAnimation {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.leistungenInnerBlock1Close,
+.leistungenInnerBlock2Close,
+.leistungenInnerBlock3Close,
+.leistungenInnerBlock4Close,
+.leistungenInnerBlock5Close {
+    font-size: 30px;
+    text-align: end;
+    background-color: rgb(246, 243, 238);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.leistungenBlockTitle {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
 }

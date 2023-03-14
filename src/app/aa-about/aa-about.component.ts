@@ -55,6 +55,7 @@ export class AaAboutComponent implements OnInit {
     const imgModalImg = imgModal.querySelector('img') as HTMLImageElement;
     imgModalImg.src = src;
     imgModal.style.display = 'flex';
+    imgModal.classList.add('imgBoxAnimation');
     document.documentElement.style.setProperty('overflow-y', 'hidden');
     const aboutContent = document.querySelector('.aboutContent') as HTMLElement;
     aboutContent.style.zIndex = 'unset';
