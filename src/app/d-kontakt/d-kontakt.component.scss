@@ -92,7 +92,7 @@
         border-radius: 3px;
         padding-top: 5px;
         padding-bottom: 5px;
-        box-shadow: 0 0 18px 1px #3f2f1f;
+        box-shadow: 0 0 18px -3px #3f2f1f;
         &:required:invalid:focus {
             border: 1px solid #e61c40;
         }
@@ -124,7 +124,7 @@
         resize: none;
         border: 1px solid rgb(63, 47, 31);
         border-radius: 3px;
-        box-shadow: 0 0 18px 1px #3f2f1f;
+        box-shadow: 0 0 18px -3px #3f2f1f;
         &:required:invalid:focus {
             border: 1px solid #e61c40;
         }
@@ -224,5 +224,5 @@ button {
     border-radius: 2px;
     background-color: rgb(243, 221, 200);
     width: 22%;
-    box-shadow: 0 0 18px 1px #3f2f1f;
+    box-shadow: 0 0 18px -3px #3f2f1f;
 }
