@@ -126,14 +126,34 @@
 .downloadImg {
     position: fixed;
     bottom: 0;
-    left: 45vw;
+    right: 60px;
     border: none;
     background: none;
     padding: 15px;
     cursor: pointer;
     transition: all 225ms ease-in-out;
     img {
-        width: 40px;
+        width: 30px;
+        height: auto;
+        object-fit: cover;
+    }
+    &:hover {
+        transition: all 225ms ease-in-out;
+        transform: scale(1.1);
+    }
+}
+
+.fullscreenImg {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: none;
+    background: none;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 225ms ease-in-out;
+    img {
+        width: 30px;
         height: auto;
         object-fit: cover;
     }

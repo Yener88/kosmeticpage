@@ -105,4 +105,16 @@ export class AaAboutComponent implements OnInit {
     link.click();
   }
 
+  fullscreenImg() {
+    const modal = this.imgModal.nativeElement;
+    const img = modal.querySelector('img');
+    if (img.requestFullscreen) {
+      img.requestFullscreen();
+    } else if (img.webkitRequestFullscreen) {
+      img.webkitRequestFullscreen();
+    } else if (img.msRequestFullscreen) {
+      img.msRequestFullscreen();
+    }
+  }
+
 }

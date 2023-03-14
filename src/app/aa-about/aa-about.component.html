@@ -32,18 +32,18 @@
         </div>
         <!-- IMAGE BOX LEISTE -->
         <div class="imgGalerie">
-            <img (click)="openImg($event)" src="assets/img/imgLaden1.jpg" alt="Foto vom Kosmetikstudio">
-            <img (click)="openImg($event)" src="assets/img/imgLaden2.jpg" alt="Foto vom Kosmetikstudio">
-            <img (click)="openImg($event)" src="assets/img/imgLaden3.jpg" alt="Foto vom Kosmetikstudio">
-            <img (click)="openImg($event)" src="assets/img/imgLaden4.jpg" alt="Foto vom Kosmetikstudio">
-            <img (click)="openImg($event)" src="assets/img/imgLaden5.jpg" alt="Foto vom Kosmetikstudio">
-            <img (click)="openImg($event)" src="assets/img/imgLaden6.jpg" alt="Foto vom Kosmetikstudio">
-            <img (click)="openImg($event)" src="assets/img/imgLaden7.jpg" alt="Foto vom Kosmetikstudio">
-            <img (click)="openImg($event)" src="assets/img/imgLaden8.jpg" alt="Foto vom Kosmetikstudio">
-            <img (click)="openImg($event)" src="assets/img/imgLaden9.jpg" alt="Foto vom Kosmetikstudio">
-            <img (click)="openImg($event)" src="assets/img/imgLaden10.jpg" alt="Foto vom Kosmetikstudio">
-            <img (click)="openImg($event)" src="assets/img/imgLaden11.jpg" alt="Foto vom Kosmetikstudio">
-            <img (click)="openImg($event)" src="assets/img/imgLaden12.jpg" alt="Foto vom Kosmetikstudio">
+            <img #myImg (click)="openImg($event)" src="assets/img/imgLaden1.jpg" alt="Foto vom Kosmetikstudio">
+            <img #myImg (click)="openImg($event)" src="assets/img/imgLaden2.jpg" alt="Foto vom Kosmetikstudio">
+            <img #myImg (click)="openImg($event)" src="assets/img/imgLaden3.jpg" alt="Foto vom Kosmetikstudio">
+            <img #myImg (click)="openImg($event)" src="assets/img/imgLaden4.jpg" alt="Foto vom Kosmetikstudio">
+            <img #myImg (click)="openImg($event)" src="assets/img/imgLaden5.jpg" alt="Foto vom Kosmetikstudio">
+            <img #myImg (click)="openImg($event)" src="assets/img/imgLaden6.jpg" alt="Foto vom Kosmetikstudio">
+            <img #myImg (click)="openImg($event)" src="assets/img/imgLaden7.jpg" alt="Foto vom Kosmetikstudio">
+            <img #myImg (click)="openImg($event)" src="assets/img/imgLaden8.jpg" alt="Foto vom Kosmetikstudio">
+            <img #myImg (click)="openImg($event)" src="assets/img/imgLaden9.jpg" alt="Foto vom Kosmetikstudio">
+            <img #myImg (click)="openImg($event)" src="assets/img/imgLaden10.jpg" alt="Foto vom Kosmetikstudio">
+            <img #myImg (click)="openImg($event)" src="assets/img/imgLaden11.jpg" alt="Foto vom Kosmetikstudio">
+            <img #myImg (click)="openImg($event)" src="assets/img/imgLaden12.jpg" alt="Foto vom Kosmetikstudio">
         </div>
         <!-- WENN AUF EIN BILD GEKLICKT WIRD -->
         <div #imgModal class="imgModal">
@@ -58,6 +58,9 @@
             </button>
             <button (click)="downloadImg()" class="downloadImg">
                 <img src="assets/img/downloadbtn.png" alt="Download Button">
+            </button>
+            <button (click)="fullscreenImg()" class="fullscreenImg">
+                <img src="assets/img/fullscreenbtn.png" alt="Fullscreen Button">
             </button>
         </div>
     </div>
