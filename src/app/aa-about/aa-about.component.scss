@@ -16,7 +16,7 @@
 
 .aboutContent2 {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     span {
         padding-bottom: 50px;
     }
@@ -24,7 +24,7 @@
 
 .imgGalerie {
     margin-top: 0px;
-    background-color: rgb(246, 243, 238);
+    background-color: rgb(243, 221, 200);
     border: 1px solid rgb(63, 47, 31);
     border-radius: 3px;
     height: 146px;
@@ -33,6 +33,7 @@
     overflow-y: hidden;
     display: flex;
     flex-direction: row;
+    box-shadow: 0 0 18px 1px #3f2f1f;
     img {
         width: 150px;
         height: 130px;
@@ -40,6 +41,7 @@
         object-fit: cover;
         cursor: pointer;
         border-radius: 5px;
+        box-shadow: 0 0 18px -5px #3f2f1f;
         &:hover {
             opacity: 0.9;
         }
