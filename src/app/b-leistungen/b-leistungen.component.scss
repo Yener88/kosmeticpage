@@ -19,17 +19,6 @@
     display: none !important;
 }
 
-.designBg {
-    position: absolute;
-    top: 1080px;
-    right: -280px;
-    z-index: 0;
-    pointer-events: none;
-    img {
-        opacity: 0.3;
-    }
-}
-
 .leistungenContainer {
     display: flex;
     flex-wrap: wrap;

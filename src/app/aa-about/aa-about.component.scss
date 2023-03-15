@@ -1,5 +1,5 @@
 .aboutSection {
-    height: 950px;
+    height: 740px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,7 @@
     background-color: rgb(243, 221, 200);
     border: 1px solid rgb(63, 47, 31);
     border-radius: 3px;
-    height: 150px;
+    height: 123px;
     width: 95%;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -35,9 +35,11 @@
     flex-direction: row;
     box-shadow: 0 0 18px -3px #3f2f1f;
     img {
-        width: 150px;
-        height: 130px;
-        margin: 5px;
+        width: 120px;
+        height: 100px;
+        margin: 6px;
+        margin-left: 13px;
+        margin-right: 13px;
         object-fit: cover;
         cursor: pointer;
         border-radius: 5px;

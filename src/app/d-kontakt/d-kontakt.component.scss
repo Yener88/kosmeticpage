@@ -37,23 +37,14 @@
         font-size: 18px;
     }
 }
+
 .route {
     text-align: start;
-}
-.designBg {
-    position: absolute;
-    top: 2660px;
-    right: -280px;
-    z-index: 0;
-    pointer-events: none;
-    img {
-        opacity: 0.3;
-    }
 }
 
 .scrollUpBtn {
     position: absolute;
-    top: 4980px;
+    top: 4775px;
     right: 20px;
     cursor: default;
     a {
@@ -184,45 +175,130 @@ input::-webkit-inner-spin-button {
     background-color: green;
 }
 
-button {
-    --b: 1px;
-    --s: 0.15em;
-    --c: rgb(63, 47, 31);
-    padding: calc(0.05em + var(--s)) calc(0.3em + var(--s));
-    color: rgb(63, 47, 31);
-    --_p: var(--s);
-    background: conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, rgb(63, 47, 31) 0) var(--_p) var(--_p) /
-        calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
-    transition: 0.3s linear, color 0s, background-color 0s;
-    outline-offset: 0.2em;
-    background-color: rgb(243, 221, 200);
+
+
+
+// button {
+//     --b: 1px;
+//     --s: 0.15em;
+//     --c: rgb(63, 47, 31);
+//     padding: calc(0.05em + var(--s)) calc(0.3em + var(--s));
+//     color: rgb(63, 47, 31);
+//     --_p: var(--s);
+//     background: conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, rgb(63, 47, 31) 0) var(--_p) var(--_p) /
+//         calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
+//     transition: 0.3s linear, color 0s, background-color 0s;
+//     outline-offset: 0.2em;
+//     background-color: rgb(243, 221, 200);
+// }
+
+// button:hover,
+// button:focus-visible {
+//     --_p: 0px;
+//     outline-color: rgb(63, 47, 31);
+//     outline-offset: 0.05em;
+// }
+
+// button:active {
+//     background: #3f2f1f;
+//     color: #fff;
+// }
+
+// button {
+//     font-family: "Oswald", sans-serif;
+//     font-weight: bold;
+//     font-size: 26px;
+//     cursor: pointer;
+//     border: none;
+//     margin: 0.1em;
+// }
+
+// .btnDesign {
+//     border: 1px solid rgb(63, 47, 31);
+//     border-radius: 2px;
+//     background-color: rgb(243, 221, 200);
+//     width: 22%;
+//     box-shadow: 0 0 18px -3px #3f2f1f;
+// }
+
+
+
+
+.buttonIntro {
+    display: flex;
+    position: relative;
+    background: none;
+    align-items: center;
+    z-index: 2;
+    button{
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        border-radius: 5px;
+    }
 }
 
-button:hover,
-button:focus-visible {
-    --_p: 0px;
-    outline-color: rgb(63, 47, 31);
-    outline-offset: 0.05em;
-}
+$speed: 0.8s;
 
-button:active {
-    background: #3f2f1f;
+.btn-flip {
+    opacity: 1;
+    outline: 0;
     color: #fff;
-}
-
-button {
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
     font-family: "Oswald", sans-serif;
-    font-weight: bold;
-    font-size: 26px;
     cursor: pointer;
-    border: none;
-    margin: 0.1em;
-}
+    &:hover {
+        &:after {
+            opacity: 1;
+            transform: translateY(0) rotateX(0);
+        }
 
-.btnDesign {
-    border: 1px solid rgb(63, 47, 31);
-    border-radius: 2px;
-    background-color: rgb(243, 221, 200);
-    width: 22%;
-    box-shadow: 0 0 18px -3px #3f2f1f;
+        &:before {
+            opacity: 0;
+            transform: translateY(50%) rotateX(90deg);
+        }
+    }
+
+    &:after {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        color: #f3ddc8;
+        display: block;
+        transition: $speed;
+        position: absolute;
+        background: #3f2f1f;
+        content: attr(data-back);
+        transform: translateY(-50%) rotateX(90deg);
+        border-radius: 5px;
+        border: 1px solid rgb(63, 47, 31);
+        box-shadow: 0 0 18px -3px #3f2f1f;
+    }
+
+    &:before {
+        top: 0;
+        left: 0;
+        opacity: 1;
+        color: #3f2f1f;
+        display: block;
+        padding: 0 30px;
+        line-height: 40px;
+        transition: $speed;
+        position: relative;
+        background: #f3ddc8;
+        content: attr(data-front);
+        transform: translateY(0) rotateX(0);
+        border-radius: 5px;
+        border: 1px solid rgb(63, 47, 31);
+        box-shadow: 0 0 18px -3px #3f2f1f;
+    }
 }
