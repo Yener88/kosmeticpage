@@ -223,12 +223,12 @@
     z-index: 2;
 }
 
-$speed: 0.8s;
+$speed: 0.5s;
 
 .btn-flip {
     opacity: 1;
     outline: 0;
-    color: #fff;
+    color: #3f2f1f;
     line-height: 40px;
     position: relative;
     text-align: center;
@@ -257,11 +257,11 @@ $speed: 0.8s;
         left: 0;
         opacity: 0;
         width: 100%;
-        color: #f3ddc8;
+        color: #3f2f1f;
         display: block;
         transition: $speed;
         position: absolute;
-        background: #3f2f1f;
+        background: rgb(243, 221, 200);
         content: attr(data-back);
         transform: translateY(-50%) rotateX(90deg);
         border-radius: 5px;
@@ -279,7 +279,7 @@ $speed: 0.8s;
         line-height: 40px;
         transition: $speed;
         position: relative;
-        background: #f3ddc8;
+        background: rgb(246, 243, 238);
         content: attr(data-front);
         transform: translateY(0) rotateX(0);
         border-radius: 5px;
