@@ -2,94 +2,95 @@
     <div class="kontaktContent" id="kontakt">
         <div class="kontaktPosition">
             <div class="kontaktPositionContainer">
-                <div class="openTimePosition">
-                    <h2>Öffnungszeiten</h2>
-                    <span>
-                        <div>Montag:</div>
-                        <div>09:00–18:00 Uhr</div>
-                    </span>
-                    <span>
-                        <div>Dienstag:</div>
-                        <div>09:00–18:00 Uhr</div>
-                    </span>
-                    <span>
-                        <div>Mittwoch:</div>
-                        <div>09:00–18:00 Uhr</div>
-                    </span>
-                    <span>
-                        <div>Donnerstag:</div>
-                        <div>09:00–18:00 Uhr</div>
-                    </span>
-                    <span>
-                        <div>Freitag:</div>
-                        <div>09:00–18:00 Uhr</div>
-                    </span> <br>
-                    <span>
-                        <div>Samstag:</div>
-                        <div>Geschlossen</div>
-                    </span> <br>
-                    <span>
-                        <div>Sonntag:</div>
-                        <div>Geschlossen</div>
-                    </span>
+                <div class="contactFormular">
+                    <h2>Kontaktformular</h2>
+                    <form action="https://yener-bas.developerakademie.net/schoenzeit/send_mail.php" method="POST">
+                        <input autocomplete="off" type="text" id="name" name="name" minlength="3" maxlength="40"
+                            placeholder="Name" required pattern="[a-zA-Z ']*"><br><br>
+                        <input autocomplete="off" id="number" name="number" type="number" placeholder="Telefonnummer"
+                            required pattern="/+49[0-9]{5,20}"><br><br>
+                        <input autocomplete="off" id="email" name="email" type="email" placeholder="E-Mail"
+                            required><br><br>
+                        <textarea name="message" id="message" minlength="20" maxlength="2000" placeholder="Nachricht"
+                            required></textarea><br><br>
+                        <label for="policy" class="checkboxStyle">
+                            <input type="checkbox" id="policy" name="policy" required>
+                            Ich habe die Datenschutzerklärung zur Kenntnis genommen. Ich stimme zu, dass meine Angaben
+                            und Daten zur Beantwortung meiner Anfrage elektronisch erhoben und gespeichert werden.
+                            Hinweis: Sie können Ihre Einwilligung jederzeit per E-Mail-
+                            Adresse an: info@kosmetikschönzeit.de widerrufen.
+                        </label><br><br>
+                        <div class="buttonIntro">
+                            <button class="btn-flip" data-back="KLICK" data-front="SENDEN" type="submit"></button>
+                        </div>
+                    </form>
                 </div>
-                <div class="route">
-                    <h2>Anreise</h2>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.3936545859956!2d6.635753916036001!3d50.95342567954802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf47abe8d6b85b%3A0xca62c5a7a966a415!2sHauptstra%C3%9Fe%2070%2C%2050126%20Bergheim!5e0!3m2!1sde!2sde!4v1678117772033!5m2!1sde!2sde"
-                        width="500" height="400" style="border:0; border: 1px solid rgb(63, 47, 31); border-radius: 3px; box-shadow: 0 0 18px -3px #3f2f1f;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                <div class="contactText">
+                    <span>
+                        <h3>Terminverschiebungen/ -absagen.</h3> <br>
+                        Bitte bedenken Sie, dass wir von Ihnen gebuchte Termine für Sie persönlich, verbindlich
+                        reservieren. Ein zu kurzfristig abgesagter oder nicht in Anspruch genommener Termin bedeutet
+                        durch den Umsatzausfall einen finanziellen Verlust für uns.
+                        <br>
+                        Wir benötigen genügend Handlungsspielraum, um einen abgesagten Termin neu zu vergeben. Daher
+                        werden Termine, die nicht 48 Stunden vorher umgebucht bzw. abgesagt werden, von uns in Rechnung
+                        gestellt, wenn diese trotz aller Bemühungen durch uns nicht wieder neu vergeben werden können.
+                        Gerne dürfen Sie uns auch selbst eine andere Kundin als “Ersatztermin” schicken, somit haben wir
+                        keinen Ausfall und Ihnen entstehen keine Ausfallkosten.
+                        <br>
+                        EINE STORNIERUNG BIS ZU 48 STUNDEN VOR DEM GEBUCHTEN TERMIN BLEIBT KOSTENFREI.
+                        Für Absagen, die weniger als 48 Stunden vor Ihren Termin eingehen, berechnen wir eine
+                        Stornogebühr in Höhe von 50 % der jeweils gebuchten Behandlung.
+                        Für Absagen, die weniger als 12 Stunden vor der gebuchten Behandlung eingehen, berechnen wir
+                        eine Stornogebühr in Höhe von 75 % der jeweils gebuchten Behandlung.
+                        Bei Nichterscheinen (ohne jegliche Information an uns) zu einem gebuchten Termin, berechnen wir
+                        eine Stornogebühr in Höhe von 100 % der jeweils gebuchten Behandlung.
+                        Ich bedanke mich sehr für Ihr Verständnis.
+                        Ihre Zeyni Afki
+                    </span>
                 </div>
             </div>
         </div>
         <div class="kontaktPositionContainer">
-            <div class="contactFormular">
-                <h2>Kontaktformular</h2>
-                <form action="https://yener-bas.developerakademie.net/schoenzeit/send_mail.php" method="POST">
-                    <input autocomplete="off" type="text" id="name" name="name" minlength="3" maxlength="40"
-                        placeholder="Name" required pattern="[a-zA-Z ']*"><br><br>
-                    <input autocomplete="off" id="number" name="number" type="number" placeholder="Telefonnummer"
-                        required pattern="/+49[0-9]{5,20}"><br><br>
-                    <input autocomplete="off" id="email" name="email" type="email" placeholder="E-Mail"
-                        required><br><br>
-                    <textarea name="message" id="message" minlength="20" maxlength="2000" placeholder="Nachricht"
-                        required></textarea><br><br>
-                    <label for="policy" class="checkboxStyle">
-                        <input type="checkbox" id="policy" name="policy" required>
-                        Ich habe die Datenschutzerklärung zur Kenntnis genommen. Ich stimme zu, dass meine Angaben
-                        und Daten zur Beantwortung meiner Anfrage elektronisch erhoben und gespeichert werden.
-                        Hinweis: Sie können Ihre Einwilligung jederzeit per E-Mail-
-                        Adresse an: info@kosmetikschönzeit.de widerrufen.
-                    </label><br><br>
-                    <div class="buttonIntro">
-                    <button class="btn-flip" data-back="KLICK" data-front="SENDEN" type="submit"></button>
-                    </div>
-                </form>
-            </div>
-            <div class="contactText">
+            <div class="openTimePosition">
+                <h2>Öffnungszeiten</h2>
                 <span>
-                    <h3>Terminverschiebungen/ -absagen.</h3> <br>
-                    Bitte bedenken Sie, dass wir von Ihnen gebuchte Termine für Sie persönlich, verbindlich
-                    reservieren. Ein zu kurzfristig abgesagter oder nicht in Anspruch genommener Termin bedeutet
-                    durch den Umsatzausfall einen finanziellen Verlust für uns.
-                    <br>
-                    Wir benötigen genügend Handlungsspielraum, um einen abgesagten Termin neu zu vergeben. Daher
-                    werden Termine, die nicht 48 Stunden vorher umgebucht bzw. abgesagt werden, von uns in Rechnung
-                    gestellt, wenn diese trotz aller Bemühungen durch uns nicht wieder neu vergeben werden können.
-                    Gerne dürfen Sie uns auch selbst eine andere Kundin als “Ersatztermin” schicken, somit haben wir
-                    keinen Ausfall und Ihnen entstehen keine Ausfallkosten.
-                    <br>
-                    EINE STORNIERUNG BIS ZU 48 STUNDEN VOR DEM GEBUCHTEN TERMIN BLEIBT KOSTENFREI.
-                    Für Absagen, die weniger als 48 Stunden vor Ihren Termin eingehen, berechnen wir eine
-                    Stornogebühr in Höhe von 50 % der jeweils gebuchten Behandlung.
-                    Für Absagen, die weniger als 12 Stunden vor der gebuchten Behandlung eingehen, berechnen wir
-                    eine Stornogebühr in Höhe von 75 % der jeweils gebuchten Behandlung.
-                    Bei Nichterscheinen (ohne jegliche Information an uns) zu einem gebuchten Termin, berechnen wir
-                    eine Stornogebühr in Höhe von 100 % der jeweils gebuchten Behandlung.
-                    Ich bedanke mich sehr für Ihr Verständnis.
-                    Ihre Zeyni Afki
+                    <div>Montag:</div>
+                    <div>09:00–18:00 Uhr</div>
                 </span>
+                <span>
+                    <div>Dienstag:</div>
+                    <div>09:00–18:00 Uhr</div>
+                </span>
+                <span>
+                    <div>Mittwoch:</div>
+                    <div>09:00–18:00 Uhr</div>
+                </span>
+                <span>
+                    <div>Donnerstag:</div>
+                    <div>09:00–18:00 Uhr</div>
+                </span>
+                <span>
+                    <div>Freitag:</div>
+                    <div>09:00–18:00 Uhr</div>
+                </span> <br>
+                <span>
+                    <div>Samstag:</div>
+                    <div>Geschlossen</div>
+                </span> <br>
+                <span>
+                    <div>Sonntag:</div>
+                    <div>Geschlossen</div>
+                </span>
+            </div>
+            <div class="route">
+                <h2>Anreise</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.3936545859956!2d6.635753916036001!3d50.95342567954802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf47abe8d6b85b%3A0xca62c5a7a966a415!2sHauptstra%C3%9Fe%2070%2C%2050126%20Bergheim!5e0!3m2!1sde!2sde!4v1678117772033!5m2!1sde!2sde"
+                    width="500" height="400"
+                    style="border:0; border: 1px solid rgb(63, 47, 31); border-radius: 3px; box-shadow: 0 0 18px -3px #3f2f1f;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
     </div>

@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     z-index: 2;
-    border-bottom: 1px solid rgb(63, 47, 31);
+    border-bottom: 1px solid rgba(63, 47, 31, 0.3);
     box-shadow: 0 0 18px -3px #3f2f1f;
 }
 
@@ -204,7 +204,8 @@
         object-fit: cover;
         transition: opacity 2s ease-in-out;
         opacity: 0;
-        border: 1px solid rgba(63, 47, 31, 0.5);
+        border-top: 1px solid rgba(63, 47, 31, 0.3);
+        border-bottom: 1px solid rgba(63, 47, 31, 0.3);
         border-radius: 2px;
         &:not(:first-child) {
             opacity: 1;

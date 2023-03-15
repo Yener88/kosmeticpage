@@ -27,8 +27,8 @@ switch ($_SERVER['REQUEST_METHOD']) {
         header("Access-Control-Allow-Origin: *");
 
         $subject = "Schoenzeit-Kontakt von " . $_POST['name'];
-        $headers = . $_POST['email'];
-        $message = . $_POST['number'] . "\n\nNachricht: " . $_POST['message'];
+        $headers = "From: " . $_POST['email'];
+        $message = "Nummer:\n\n" . $_POST['number'] . "\n\nNachricht:\n\n" . $_POST['message'];
 
         mail($recipient, $subject, $message, $headers);
         header("Location: " . $redirect); 
